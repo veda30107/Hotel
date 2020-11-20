@@ -1,2 +1,5 @@
 # Hotel
-EDA for hotel classification
+EDA
+Model Building
+Deployment
+Final Output
