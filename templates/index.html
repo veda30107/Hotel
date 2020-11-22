@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+ <head>
+ <title>Movie Classification</title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<h2>Please enter your hotel review:</h2>
+
+{% from "_formhelpers.html" import render_field %}
+
+<form method=post action="/results">
+  <dl>
+	{{ render_field(form.hotelreview, cols='30', rows='10') }}
+  </dl>
+  <div>
+	  <input type=submit value='Submit review' name='submit_btn'>
+  </div>
+</form>
+
+  </body>
+</html>
